@@ -1,0 +1,15 @@
+name: DuelingPlugin
+version: 1.0.0
+main: com.dueling.plugin.DuelingPlugin
+description: A hardcore 1v1 dueling system for Minecraft
+authors:
+  - Dueling Dev
+depend:
+  - Essentials
+
+commands:
+  duel:
+    description: Main dueling command
+    usage: /duel [command]
+    aliases:
+      - d
