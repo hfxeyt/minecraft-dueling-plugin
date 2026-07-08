@@ -1,0 +1,75 @@
+##############################################
+# Dueling Plugin Configuration
+# Hardcore 1v1 Dueling System
+##############################################
+
+# Lobby spawn location
+lobby:
+  world: "world"
+  x: 0.0
+  y: 64.0
+  z: 0.0
+
+# Game messages (color codes supported with §)
+messages:
+  duel-request: "§e%player% §ehas challenged you to a duel!"
+  duel-request-sent: "§aDuel request sent to %player%"
+  match-started: "§a§lMatch started!"
+  match-ended: "§c§lMatch ended!"
+  player-won: "§a%winner% §ahas won the match!"
+  player-lost: "§c%loser% §chas been defeated!"
+  draw-request: "§e%player% §ehas requested a draw!"
+  draw-accepted: "§aMatch ended in a draw!"
+  draw-denied: "§c%player% §chas denied your draw request!"
+  block-break-disabled: "§cBlock breaking is disabled in this arena"
+  cannot-break-original-blocks: "§cYou can only break blocks placed by players"
+  arena-not-found: "§cArena not found"
+  invalid-arena: "§cPlease select a valid arena"
+
+# Match configuration
+match:
+  # Default time limit for matches (in seconds)
+  # Available options: 180 (3 min), 300 (5 min), 600 (10 min)
+  default-time-limit: 300
+  
+  # Whether players can break blocks in the arena
+  allow-block-breaking: true
+  
+  # Whether items drop naturally when a player dies
+  items-drop-on-death: true
+  
+  # Time limit for picking up loot after winning (in seconds)
+  loot-pickup-time: 60
+  
+  # Countdown before match starts (in seconds)
+  countdown-time: 3
+  
+  # Teleport height above arena floor for players
+  spawn-height: 0.5
+
+# Arena restoration
+arena:
+  # Whether to automatically restore arena after match
+  auto-restore: true
+  
+  # Delay before restoring arena (in seconds)
+  restore-delay: 65
+
+# Death configuration
+death:
+  # Whether the natural death drop system is enabled
+  enable-natural-drops: true
+  
+  # Whether to prevent item modification on death
+  preserve-item-drops: true
+
+# EssentialsX Integration
+essentials:
+  enabled: true
+  # Players will be teleported to their home after winning
+  use-player-home: true
+  # Fallback location if home is not set
+  fallback-world: "world"
+  fallback-x: 0.0
+  fallback-y: 64.0
+  fallback-z: 0.0
